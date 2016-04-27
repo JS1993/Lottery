@@ -10,10 +10,11 @@
 #import "JSAranaViewController.h"
 #import "JSHallTableViewController.h"
 #import "JSDiscoverTableViewController.h"
-#import "JSMyLotteryTableViewController.h"
+#import "JSMyLotteryViewController.h"
 #import "JSHistoryTableViewController.h"
 #import "JSTabBar.h"
 #import "JSNavigationController.h"
+#import "JSArenaNavigationController.h"
 
 @interface JSTabBarController ()<JSTabBarDelegate>
 
@@ -30,6 +31,19 @@
     return _items;
 }
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    //把所有除了tabBar之外的子控件移除
+    for (UIView* view in self.tabBar.subviews) {
+        if (![view isKindOfClass:[JSTabBar class]]) {
+            [view removeFromSuperview];
+        }
+    }
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -48,20 +62,18 @@
 
 #pragma mark--创建tabBar
 -(void)setUpTabBar{
-    //移除自身的tabBar
-    [self.tabBar removeFromSuperview];
     
     JSTabBar* tabBar=[[JSTabBar alloc]init];
     
     tabBar.items=self.items;
     
-    tabBar.frame=self.tabBar.frame;
+    tabBar.frame=self.tabBar.bounds;
     
     tabBar.delegate=self;
     
-    tabBar.backgroundColor=[self randomColor];
+    tabBar.backgroundColor=[UIColor blackColor];
     
-    [self.view addSubview:tabBar];
+    [self.tabBar addSubview:tabBar];
 }
 
 #pragma mark-- 创建子界面
@@ -73,13 +85,15 @@
     JSAranaViewController* arenaVC=[[JSAranaViewController alloc]init];
     [self setUpViewController:arenaVC andImage:[UIImage imageNamed:@"TabBar_Arena_new"] andSelImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] andTitle:@"竞技场"];
     
-    JSDiscoverTableViewController* discoverVC=[[JSDiscoverTableViewController alloc]init];
+    UIStoryboard* stroyBoard=[UIStoryboard storyboardWithName:@"JSDiscoverTableViewController" bundle:nil];
+    
+    JSDiscoverTableViewController* discoverVC=[stroyBoard instantiateInitialViewController];
     [self setUpViewController:discoverVC andImage:[UIImage imageNamed:@"TabBar_Discovery_new"] andSelImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] andTitle:@"发现"];
     
     JSHistoryTableViewController* historyVC=[[JSHistoryTableViewController alloc]init];
     [self setUpViewController:historyVC andImage:[UIImage imageNamed:@"TabBar_History_new"] andSelImage:[UIImage imageNamed:@"TabBar_History_selected_new"] andTitle:@"开奖信息"];
     
-    JSMyLotteryTableViewController* myLotteryVC=[[JSMyLotteryTableViewController alloc]init];
+    JSMyLotteryViewController* myLotteryVC=[[JSMyLotteryViewController alloc]init];
     [self setUpViewController:myLotteryVC andImage:[UIImage imageNamed:@"TabBar_MyLottery_new"] andSelImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] andTitle:@"我的彩票"];
 }
 
@@ -92,9 +106,11 @@
     
     vc.navigationItem.title=title;
     
-    vc.view.backgroundColor=[self randomColor];
+    UINavigationController* navi=[[JSNavigationController alloc]initWithRootViewController:vc];
     
-    JSNavigationController* navi=[[JSNavigationController alloc]initWithRootViewController:vc];
+    if ([vc isMemberOfClass:[JSAranaViewController class]]) {
+        navi=[[JSArenaNavigationController alloc]initWithRootViewController:vc];
+    }
     
     [self addChildViewController:navi];
     

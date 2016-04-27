@@ -11,6 +11,14 @@
 		CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE88C1CD07F9C00309C2D /* JSActivityView.m */; };
 		CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */; };
 		CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8911CD0893600309C2D /* JSDragDownView.m */; };
+		CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8961CD0BA5900309C2D /* JSMyLotteryViewController.m */; };
+		CF4CE8991CD0BA5900309C2D /* JSMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE8971CD0BA5900309C2D /* JSMyLotteryViewController.xib */; };
+		CF4CE89C1CD0C14B00309C2D /* JSArenaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE89B1CD0C14B00309C2D /* JSArenaNavigationController.m */; };
+		CF4CE89E1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE89D1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard */; };
+		CF4CE8A11CD0CFB000309C2D /* JSBuyTogetherTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8A01CD0CFB000309C2D /* JSBuyTogetherTableViewController.m */; };
+		CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8A31CD0CFE700309C2D /* BuyTogetherTitleButton.m */; };
+		CF4CE8A71CD0D5F600309C2D /* LuckyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8A61CD0D5F600309C2D /* LuckyView.m */; };
+		CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8A91CD0D6FD00309C2D /* JSLuckyViewController.m */; };
 		CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64D1CCF755000AC1EEA /* Assets.xcassets */; };
 		CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64F1CCF755000AC1EEA /* LaunchScreen.storyboard */; };
 		CF55F65C1CCF755000AC1EEA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F65B1CCF755000AC1EEA /* ____Tests.m */; };
@@ -20,7 +28,6 @@
 		CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F69C1CCF794700AC1EEA /* JSHallTableViewController.m */; };
 		CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */; };
 		CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */; };
-		CF55F6A61CCF79F600AC1EEA /* JSMyLotteryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */; };
 		CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6AB1CCF7A8300AC1EEA /* JSTabBarController.m */; };
 		CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6AE1CCF7AA400AC1EEA /* JSNavigationController.m */; };
 		CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B11CCF7ABC00AC1EEA /* JSTabBar.m */; };
@@ -54,6 +61,20 @@
 		CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSActivityView.xib; sourceTree = "<group>"; };
 		CF4CE8901CD0893600309C2D /* JSDragDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDragDownView.h; sourceTree = "<group>"; };
 		CF4CE8911CD0893600309C2D /* JSDragDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDragDownView.m; sourceTree = "<group>"; };
+		CF4CE8951CD0BA5900309C2D /* JSMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMyLotteryViewController.h; sourceTree = "<group>"; };
+		CF4CE8961CD0BA5900309C2D /* JSMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMyLotteryViewController.m; sourceTree = "<group>"; };
+		CF4CE8971CD0BA5900309C2D /* JSMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSMyLotteryViewController.xib; sourceTree = "<group>"; };
+		CF4CE89A1CD0C14B00309C2D /* JSArenaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSArenaNavigationController.h; sourceTree = "<group>"; };
+		CF4CE89B1CD0C14B00309C2D /* JSArenaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSArenaNavigationController.m; sourceTree = "<group>"; };
+		CF4CE89D1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JSDiscoverTableViewController.storyboard; sourceTree = "<group>"; };
+		CF4CE89F1CD0CFB000309C2D /* JSBuyTogetherTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBuyTogetherTableViewController.h; sourceTree = "<group>"; };
+		CF4CE8A01CD0CFB000309C2D /* JSBuyTogetherTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBuyTogetherTableViewController.m; sourceTree = "<group>"; };
+		CF4CE8A21CD0CFE700309C2D /* BuyTogetherTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTogetherTitleButton.h; sourceTree = "<group>"; };
+		CF4CE8A31CD0CFE700309C2D /* BuyTogetherTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTogetherTitleButton.m; sourceTree = "<group>"; };
+		CF4CE8A51CD0D5F600309C2D /* LuckyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckyView.h; sourceTree = "<group>"; };
+		CF4CE8A61CD0D5F600309C2D /* LuckyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckyView.m; sourceTree = "<group>"; };
+		CF4CE8A81CD0D6FD00309C2D /* JSLuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLuckyViewController.h; sourceTree = "<group>"; };
+		CF4CE8A91CD0D6FD00309C2D /* JSLuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLuckyViewController.m; sourceTree = "<group>"; };
 		CF55F63E1CCF755000AC1EEA /* 网易彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF55F64D1CCF755000AC1EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF55F6501CCF755000AC1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,8 +94,6 @@
 		CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAranaViewController.m; sourceTree = "<group>"; };
 		CF55F6A11CCF79CE00AC1EEA /* JSDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDiscoverTableViewController.h; sourceTree = "<group>"; };
 		CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDiscoverTableViewController.m; sourceTree = "<group>"; };
-		CF55F6A41CCF79F600AC1EEA /* JSMyLotteryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMyLotteryTableViewController.h; sourceTree = "<group>"; };
-		CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMyLotteryTableViewController.m; sourceTree = "<group>"; };
 		CF55F6AA1CCF7A8300AC1EEA /* JSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarController.h; sourceTree = "<group>"; };
 		CF55F6AB1CCF7A8300AC1EEA /* JSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarController.m; sourceTree = "<group>"; };
 		CF55F6AD1CCF7AA400AC1EEA /* JSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationController.h; sourceTree = "<group>"; };
@@ -200,6 +219,8 @@
 			children = (
 				CF55F69E1CCF79A800AC1EEA /* JSAranaViewController.h */,
 				CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */,
+				CF4CE89A1CD0C14B00309C2D /* JSArenaNavigationController.h */,
+				CF4CE89B1CD0C14B00309C2D /* JSArenaNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +254,11 @@
 			children = (
 				CF55F6A11CCF79CE00AC1EEA /* JSDiscoverTableViewController.h */,
 				CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */,
+				CF4CE89D1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard */,
+				CF4CE89F1CD0CFB000309C2D /* JSBuyTogetherTableViewController.h */,
+				CF4CE8A01CD0CFB000309C2D /* JSBuyTogetherTableViewController.m */,
+				CF4CE8A81CD0D6FD00309C2D /* JSLuckyViewController.h */,
+				CF4CE8A91CD0D6FD00309C2D /* JSLuckyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +273,10 @@
 		CF55F67C1CCF76DE00AC1EEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF4CE8A21CD0CFE700309C2D /* BuyTogetherTitleButton.h */,
+				CF4CE8A31CD0CFE700309C2D /* BuyTogetherTitleButton.m */,
+				CF4CE8A51CD0D5F600309C2D /* LuckyView.h */,
+				CF4CE8A61CD0D5F600309C2D /* LuckyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,8 +437,9 @@
 		CF55F68E1CCF76DE00AC1EEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CF55F6A41CCF79F600AC1EEA /* JSMyLotteryTableViewController.h */,
-				CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */,
+				CF4CE8951CD0BA5900309C2D /* JSMyLotteryViewController.h */,
+				CF4CE8961CD0BA5900309C2D /* JSMyLotteryViewController.m */,
+				CF4CE8971CD0BA5900309C2D /* JSMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -575,6 +606,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4CE89E1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard in Resources */,
+				CF4CE8991CD0BA5900309C2D /* JSMyLotteryViewController.xib in Resources */,
 				CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */,
 				CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */,
 				CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */,
@@ -603,19 +636,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */,
+				CF4CE89C1CD0C14B00309C2D /* JSArenaNavigationController.m in Sources */,
 				CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */,
 				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
 				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
+				CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */,
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
+				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
 				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
+				CF4CE8A71CD0D5F600309C2D /* LuckyView.m in Sources */,
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
-				CF55F6A61CCF79F600AC1EEA /* JSMyLotteryTableViewController.m in Sources */,
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
 				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
+				CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */,
+				CF4CE8A11CD0CFB000309C2D /* JSBuyTogetherTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

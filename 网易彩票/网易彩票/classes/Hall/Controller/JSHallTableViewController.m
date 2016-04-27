@@ -9,12 +9,25 @@
 #import "JSHallTableViewController.h"
 #import "CoverView.h"
 #import "JSActivityView.h"
+#import "JSDragDownView.h"
 
 @interface JSHallTableViewController ()<JSActivityViewDelegate>
+
+@property(nonatomic,assign)BOOL HadPopView;
+
+@property(nonatomic,strong)JSDragDownView* dragView;
 
 @end
 
 @implementation JSHallTableViewController
+
+-(JSDragDownView *)dragView{
+    if (_dragView==nil) {
+        _dragView=[JSDragDownView showInView:self.view];
+        [self.view addSubview:_dragView];
+    }
+    return _dragView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +46,20 @@
 
 #pragma mark-点击右边按钮
 -(void)clickedRight{
+    
+    if (self.HadPopView==NO) {
+        
+        [self dragView];
+        
+    }else{
+        
+       [self.dragView hide:self.dragView];
+        
+        self.dragView=nil;
+        
+    }
+    
+    self.HadPopView=!self.HadPopView;
     
 }
 
