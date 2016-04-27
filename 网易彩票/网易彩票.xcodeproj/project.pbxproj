@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64D1CCF755000AC1EEA /* Assets.xcassets */; };
+		CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64F1CCF755000AC1EEA /* LaunchScreen.storyboard */; };
+		CF55F65C1CCF755000AC1EEA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F65B1CCF755000AC1EEA /* ____Tests.m */; };
+		CF55F6671CCF755000AC1EEA /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6661CCF755000AC1EEA /* ____UITests.m */; };
+		CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6931CCF76DE00AC1EEA /* AppDelegate.m */; };
+		CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6941CCF76DE00AC1EEA /* main.m */; };
+		CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F69C1CCF794700AC1EEA /* JSHallTableViewController.m */; };
+		CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */; };
+		CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */; };
+		CF55F6A61CCF79F600AC1EEA /* JSMyLotteryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */; };
+		CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6AB1CCF7A8300AC1EEA /* JSTabBarController.m */; };
+		CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6AE1CCF7AA400AC1EEA /* JSNavigationController.m */; };
+		CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B11CCF7ABC00AC1EEA /* JSTabBar.m */; };
+		CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */; };
+		CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF55F6581CCF755000AC1EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF55F6361CCF755000AC1EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF55F63D1CCF755000AC1EEA;
+			remoteInfo = "网易彩票";
+		};
+		CF55F6631CCF755000AC1EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF55F6361CCF755000AC1EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF55F63D1CCF755000AC1EEA;
+			remoteInfo = "网易彩票";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF55F63E1CCF755000AC1EEA /* 网易彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF55F64D1CCF755000AC1EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF55F6501CCF755000AC1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF55F6521CCF755000AC1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF55F6571CCF755000AC1EEA /* 网易彩票Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易彩票Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF55F65B1CCF755000AC1EEA /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		CF55F65D1CCF755000AC1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF55F6621CCF755000AC1EEA /* 网易彩票UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易彩票UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF55F6661CCF755000AC1EEA /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		CF55F6681CCF755000AC1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF55F6921CCF76DE00AC1EEA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF55F6931CCF76DE00AC1EEA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF55F6941CCF76DE00AC1EEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF55F69B1CCF794700AC1EEA /* JSHallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHallTableViewController.h; sourceTree = "<group>"; };
+		CF55F69C1CCF794700AC1EEA /* JSHallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHallTableViewController.m; sourceTree = "<group>"; };
+		CF55F69E1CCF79A800AC1EEA /* JSAranaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAranaViewController.h; sourceTree = "<group>"; };
+		CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAranaViewController.m; sourceTree = "<group>"; };
+		CF55F6A11CCF79CE00AC1EEA /* JSDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDiscoverTableViewController.h; sourceTree = "<group>"; };
+		CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDiscoverTableViewController.m; sourceTree = "<group>"; };
+		CF55F6A41CCF79F600AC1EEA /* JSMyLotteryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMyLotteryTableViewController.h; sourceTree = "<group>"; };
+		CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMyLotteryTableViewController.m; sourceTree = "<group>"; };
+		CF55F6AA1CCF7A8300AC1EEA /* JSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarController.h; sourceTree = "<group>"; };
+		CF55F6AB1CCF7A8300AC1EEA /* JSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarController.m; sourceTree = "<group>"; };
+		CF55F6AD1CCF7AA400AC1EEA /* JSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationController.h; sourceTree = "<group>"; };
+		CF55F6AE1CCF7AA400AC1EEA /* JSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationController.m; sourceTree = "<group>"; };
+		CF55F6B01CCF7ABC00AC1EEA /* JSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBar.h; sourceTree = "<group>"; };
+		CF55F6B11CCF7ABC00AC1EEA /* JSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBar.m; sourceTree = "<group>"; };
+		CF55F6B31CCF7AD300AC1EEA /* JSTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarButton.h; sourceTree = "<group>"; };
+		CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarButton.m; sourceTree = "<group>"; };
+		CF55F6B61CCF7BAD00AC1EEA /* JSHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHistoryTableViewController.h; sourceTree = "<group>"; };
+		CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHistoryTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF55F63B1CCF755000AC1EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F6541CCF755000AC1EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F65F1CCF755000AC1EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF55F6351CCF755000AC1EEA = {
+			isa = PBXGroup;
+			children = (
+				CF55F6401CCF755000AC1EEA /* 网易彩票 */,
+				CF55F65A1CCF755000AC1EEA /* 网易彩票Tests */,
+				CF55F6651CCF755000AC1EEA /* 网易彩票UITests */,
+				CF55F63F1CCF755000AC1EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF55F63F1CCF755000AC1EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F63E1CCF755000AC1EEA /* 网易彩票.app */,
+				CF55F6571CCF755000AC1EEA /* 网易彩票Tests.xctest */,
+				CF55F6621CCF755000AC1EEA /* 网易彩票UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF55F6401CCF755000AC1EEA /* 网易彩票 */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6741CCF76DE00AC1EEA /* classes */,
+				CF55F64D1CCF755000AC1EEA /* Assets.xcassets */,
+				CF55F64F1CCF755000AC1EEA /* LaunchScreen.storyboard */,
+				CF55F6521CCF755000AC1EEA /* Info.plist */,
+				CF55F6411CCF755000AC1EEA /* Supporting Files */,
+			);
+			path = "网易彩票";
+			sourceTree = "<group>";
+		};
+		CF55F6411CCF755000AC1EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF55F65A1CCF755000AC1EEA /* 网易彩票Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F65B1CCF755000AC1EEA /* ____Tests.m */,
+				CF55F65D1CCF755000AC1EEA /* Info.plist */,
+			);
+			path = "网易彩票Tests";
+			sourceTree = "<group>";
+		};
+		CF55F6651CCF755000AC1EEA /* 网易彩票UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6661CCF755000AC1EEA /* ____UITests.m */,
+				CF55F6681CCF755000AC1EEA /* Info.plist */,
+			);
+			path = "网易彩票UITests";
+			sourceTree = "<group>";
+		};
+		CF55F6741CCF76DE00AC1EEA /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6751CCF76DE00AC1EEA /* Arana */,
+				CF55F6791CCF76DE00AC1EEA /* Discover */,
+				CF55F67D1CCF76DE00AC1EEA /* Hall */,
+				CF55F6811CCF76DE00AC1EEA /* Help */,
+				CF55F6851CCF76DE00AC1EEA /* History */,
+				CF55F6891CCF76DE00AC1EEA /* Main */,
+				CF55F68D1CCF76DE00AC1EEA /* Mylottery */,
+				CF55F6911CCF76DE00AC1EEA /* Other */,
+				CF55F6951CCF76DE00AC1EEA /* Setting */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		CF55F6751CCF76DE00AC1EEA /* Arana */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6761CCF76DE00AC1EEA /* Controller */,
+				CF55F6771CCF76DE00AC1EEA /* Model */,
+				CF55F6781CCF76DE00AC1EEA /* View */,
+			);
+			path = Arana;
+			sourceTree = "<group>";
+		};
+		CF55F6761CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F69E1CCF79A800AC1EEA /* JSAranaViewController.h */,
+				CF55F69F1CCF79A800AC1EEA /* JSAranaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F6771CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6781CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F6791CCF76DE00AC1EEA /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F67A1CCF76DE00AC1EEA /* Controller */,
+				CF55F67B1CCF76DE00AC1EEA /* Model */,
+				CF55F67C1CCF76DE00AC1EEA /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		CF55F67A1CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6A11CCF79CE00AC1EEA /* JSDiscoverTableViewController.h */,
+				CF55F6A21CCF79CE00AC1EEA /* JSDiscoverTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F67B1CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F67C1CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F67D1CCF76DE00AC1EEA /* Hall */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F67E1CCF76DE00AC1EEA /* Controller */,
+				CF55F67F1CCF76DE00AC1EEA /* Model */,
+				CF55F6801CCF76DE00AC1EEA /* View */,
+			);
+			path = Hall;
+			sourceTree = "<group>";
+		};
+		CF55F67E1CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F69B1CCF794700AC1EEA /* JSHallTableViewController.h */,
+				CF55F69C1CCF794700AC1EEA /* JSHallTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F67F1CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6801CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F6811CCF76DE00AC1EEA /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6821CCF76DE00AC1EEA /* Controller */,
+				CF55F6831CCF76DE00AC1EEA /* Model */,
+				CF55F6841CCF76DE00AC1EEA /* View */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		CF55F6821CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F6831CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6841CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F6851CCF76DE00AC1EEA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6861CCF76DE00AC1EEA /* Controller */,
+				CF55F6871CCF76DE00AC1EEA /* Model */,
+				CF55F6881CCF76DE00AC1EEA /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		CF55F6861CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6B61CCF7BAD00AC1EEA /* JSHistoryTableViewController.h */,
+				CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F6871CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6881CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F6891CCF76DE00AC1EEA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F68A1CCF76DE00AC1EEA /* Controller */,
+				CF55F68B1CCF76DE00AC1EEA /* Model */,
+				CF55F68C1CCF76DE00AC1EEA /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CF55F68A1CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6AA1CCF7A8300AC1EEA /* JSTabBarController.h */,
+				CF55F6AB1CCF7A8300AC1EEA /* JSTabBarController.m */,
+				CF55F6AD1CCF7AA400AC1EEA /* JSNavigationController.h */,
+				CF55F6AE1CCF7AA400AC1EEA /* JSNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F68B1CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F68C1CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6B01CCF7ABC00AC1EEA /* JSTabBar.h */,
+				CF55F6B11CCF7ABC00AC1EEA /* JSTabBar.m */,
+				CF55F6B31CCF7AD300AC1EEA /* JSTabBarButton.h */,
+				CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F68D1CCF76DE00AC1EEA /* Mylottery */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F68E1CCF76DE00AC1EEA /* Controller */,
+				CF55F68F1CCF76DE00AC1EEA /* Model */,
+				CF55F6901CCF76DE00AC1EEA /* View */,
+			);
+			path = Mylottery;
+			sourceTree = "<group>";
+		};
+		CF55F68E1CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6A41CCF79F600AC1EEA /* JSMyLotteryTableViewController.h */,
+				CF55F6A51CCF79F600AC1EEA /* JSMyLotteryTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F68F1CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6901CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF55F6911CCF76DE00AC1EEA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6921CCF76DE00AC1EEA /* AppDelegate.h */,
+				CF55F6931CCF76DE00AC1EEA /* AppDelegate.m */,
+				CF55F6941CCF76DE00AC1EEA /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CF55F6951CCF76DE00AC1EEA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CF55F6961CCF76DE00AC1EEA /* Controller */,
+				CF55F6971CCF76DE00AC1EEA /* Model */,
+				CF55F6981CCF76DE00AC1EEA /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CF55F6961CCF76DE00AC1EEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF55F6971CCF76DE00AC1EEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF55F6981CCF76DE00AC1EEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF55F63D1CCF755000AC1EEA /* 网易彩票 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF55F66B1CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票" */;
+			buildPhases = (
+				CF55F63A1CCF755000AC1EEA /* Sources */,
+				CF55F63B1CCF755000AC1EEA /* Frameworks */,
+				CF55F63C1CCF755000AC1EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "网易彩票";
+			productName = "网易彩票";
+			productReference = CF55F63E1CCF755000AC1EEA /* 网易彩票.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF55F6561CCF755000AC1EEA /* 网易彩票Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF55F66E1CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票Tests" */;
+			buildPhases = (
+				CF55F6531CCF755000AC1EEA /* Sources */,
+				CF55F6541CCF755000AC1EEA /* Frameworks */,
+				CF55F6551CCF755000AC1EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF55F6591CCF755000AC1EEA /* PBXTargetDependency */,
+			);
+			name = "网易彩票Tests";
+			productName = "网易彩票Tests";
+			productReference = CF55F6571CCF755000AC1EEA /* 网易彩票Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF55F6611CCF755000AC1EEA /* 网易彩票UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF55F6711CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票UITests" */;
+			buildPhases = (
+				CF55F65E1CCF755000AC1EEA /* Sources */,
+				CF55F65F1CCF755000AC1EEA /* Frameworks */,
+				CF55F6601CCF755000AC1EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF55F6641CCF755000AC1EEA /* PBXTargetDependency */,
+			);
+			name = "网易彩票UITests";
+			productName = "网易彩票UITests";
+			productReference = CF55F6621CCF755000AC1EEA /* 网易彩票UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF55F6361CCF755000AC1EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jiangsu;
+				TargetAttributes = {
+					CF55F63D1CCF755000AC1EEA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+					};
+					CF55F6561CCF755000AC1EEA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CF55F63D1CCF755000AC1EEA;
+					};
+					CF55F6611CCF755000AC1EEA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4SU7V64Q9J;
+						TestTargetID = CF55F63D1CCF755000AC1EEA;
+					};
+				};
+			};
+			buildConfigurationList = CF55F6391CCF755000AC1EEA /* Build configuration list for PBXProject "网易彩票" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF55F6351CCF755000AC1EEA;
+			productRefGroup = CF55F63F1CCF755000AC1EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF55F63D1CCF755000AC1EEA /* 网易彩票 */,
+				CF55F6561CCF755000AC1EEA /* 网易彩票Tests */,
+				CF55F6611CCF755000AC1EEA /* 网易彩票UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF55F63C1CCF755000AC1EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */,
+				CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F6551CCF755000AC1EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F6601CCF755000AC1EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF55F63A1CCF755000AC1EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */,
+				CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */,
+				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
+				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
+				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
+				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
+				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
+				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
+				CF55F6A61CCF79F600AC1EEA /* JSMyLotteryTableViewController.m in Sources */,
+				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
+				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F6531CCF755000AC1EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55F65C1CCF755000AC1EEA /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55F65E1CCF755000AC1EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55F6671CCF755000AC1EEA /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF55F6591CCF755000AC1EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF55F63D1CCF755000AC1EEA /* 网易彩票 */;
+			targetProxy = CF55F6581CCF755000AC1EEA /* PBXContainerItemProxy */;
+		};
+		CF55F6641CCF755000AC1EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF55F63D1CCF755000AC1EEA /* 网易彩票 */;
+			targetProxy = CF55F6631CCF755000AC1EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF55F64F1CCF755000AC1EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF55F6501CCF755000AC1EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF55F6691CCF755000AC1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF55F66A1CCF755000AC1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF55F66C1CCF755000AC1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "网易彩票/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF55F66D1CCF755000AC1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "网易彩票/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF55F66F1CCF755000AC1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "网易彩票Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网易彩票.app/网易彩票";
+			};
+			name = Debug;
+		};
+		CF55F6701CCF755000AC1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "网易彩票Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网易彩票.app/网易彩票";
+			};
+			name = Release;
+		};
+		CF55F6721CCF755000AC1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "网易彩票UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "网易彩票";
+			};
+			name = Debug;
+		};
+		CF55F6731CCF755000AC1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "网易彩票UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangsu.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "网易彩票";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF55F6391CCF755000AC1EEA /* Build configuration list for PBXProject "网易彩票" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55F6691CCF755000AC1EEA /* Debug */,
+				CF55F66A1CCF755000AC1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF55F66B1CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55F66C1CCF755000AC1EEA /* Debug */,
+				CF55F66D1CCF755000AC1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF55F66E1CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55F66F1CCF755000AC1EEA /* Debug */,
+				CF55F6701CCF755000AC1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF55F6711CCF755000AC1EEA /* Build configuration list for PBXNativeTarget "网易彩票UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55F6721CCF755000AC1EEA /* Debug */,
+				CF55F6731CCF755000AC1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF55F6361CCF755000AC1EEA /* Project object */;
+}
