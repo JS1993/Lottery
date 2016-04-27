@@ -40,9 +40,9 @@
 }
 
 #pragma mark-JSTabBarDelegate方法
--(void)tabBar:(JSTabBar *)tabBar didClickButtonIndex:(NSInteger *)index{
+-(void)tabBar:(JSTabBar *)tabBar didClickButtonIndex:(NSInteger)index{
    
-    self.selectedIndex=(NSUInteger)index;
+    self.selectedIndex=(NSInteger)index;
     
 }
 
@@ -71,16 +71,16 @@
     [self setUpViewController:hallVC andImage:[UIImage imageNamed:@"TabBar_LotteryHall_new"] andSelImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"] andTitle:@"购彩大厅"];
     
     JSAranaViewController* arenaVC=[[JSAranaViewController alloc]init];
-    [self setUpViewController:arenaVC andImage:[UIImage imageNamed:@"TabBar_Arena_new"] andSelImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] andTitle:@"购彩大厅"];
+    [self setUpViewController:arenaVC andImage:[UIImage imageNamed:@"TabBar_Arena_new"] andSelImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] andTitle:@"竞技场"];
     
     JSDiscoverTableViewController* discoverVC=[[JSDiscoverTableViewController alloc]init];
-    [self setUpViewController:discoverVC andImage:[UIImage imageNamed:@"TabBar_Discovery_new"] andSelImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] andTitle:@"购彩大厅"];
+    [self setUpViewController:discoverVC andImage:[UIImage imageNamed:@"TabBar_Discovery_new"] andSelImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] andTitle:@"发现"];
     
     JSHistoryTableViewController* historyVC=[[JSHistoryTableViewController alloc]init];
-    [self setUpViewController:historyVC andImage:[UIImage imageNamed:@"TabBar_History_new"] andSelImage:[UIImage imageNamed:@"TabBar_History_selected_new"] andTitle:@"购彩大厅"];
+    [self setUpViewController:historyVC andImage:[UIImage imageNamed:@"TabBar_History_new"] andSelImage:[UIImage imageNamed:@"TabBar_History_selected_new"] andTitle:@"开奖信息"];
     
     JSMyLotteryTableViewController* myLotteryVC=[[JSMyLotteryTableViewController alloc]init];
-    [self setUpViewController:myLotteryVC andImage:[UIImage imageNamed:@"TabBar_MyLottery_new"] andSelImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] andTitle:@"购彩大厅"];
+    [self setUpViewController:myLotteryVC andImage:[UIImage imageNamed:@"TabBar_MyLottery_new"] andSelImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] andTitle:@"我的彩票"];
 }
 
 #pragma mark--将控制器统一包装的方法

@@ -1,0 +1,14 @@
+//
+//  网易彩票.pch
+//  网易彩票
+//
+//  Created by  江苏 on 16/4/27.
+//  Copyright © 2016年 jiangsu. All rights reserved.
+//
+
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+#define ScreenBounds [UIScreen mainScreen].bounds
+#define KeyWindow [UIApplication sharedApplication].keyWindow
+

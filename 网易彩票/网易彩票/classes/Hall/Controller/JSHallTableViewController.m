@@ -7,8 +7,10 @@
 //
 
 #import "JSHallTableViewController.h"
+#import "CoverView.h"
+#import "JSActivityView.h"
 
-@interface JSHallTableViewController ()
+@interface JSHallTableViewController ()<JSActivityViewDelegate>
 
 @end
 
@@ -22,14 +24,35 @@
     
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithImage:[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(clickedLeft)];
     
-}
-
--(void)clickedLeft{
+    //设置右边按钮
+    UIImage* rightImage=[UIImage imageNamed:@"Development"];
+    
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithImage:[rightImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(clickedRight)];
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark-点击右边按钮
+-(void)clickedRight{
+    
+}
+
+#pragma mark-点击左边按钮
+-(void)clickedLeft{
+    
+    [CoverView show];
+    
+    JSActivityView* activityView=[JSActivityView show];
+    
+    activityView.delegate=self;
+    
+}
+
+#pragma mark--JSActivityDelegate方法
+-(void)activityViewDidClickedHiddenButton:(JSActivityView*)activityView{
+    
+    [activityView hide];
+    
+    [CoverView hide];
 }
 
 #pragma mark - Table view data source

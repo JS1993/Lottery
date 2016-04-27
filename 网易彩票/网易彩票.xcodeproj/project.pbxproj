@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8891CD07E2E00309C2D /* CoverView.m */; };
+		CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE88C1CD07F9C00309C2D /* JSActivityView.m */; };
+		CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */; };
+		CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8911CD0893600309C2D /* JSDragDownView.m */; };
 		CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64D1CCF755000AC1EEA /* Assets.xcassets */; };
 		CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF55F64F1CCF755000AC1EEA /* LaunchScreen.storyboard */; };
 		CF55F65C1CCF755000AC1EEA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F65B1CCF755000AC1EEA /* ____Tests.m */; };
@@ -42,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF4CE8871CD07AB800309C2D /* 网易彩票.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "网易彩票.pch"; sourceTree = "<group>"; };
+		CF4CE8881CD07E2E00309C2D /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		CF4CE8891CD07E2E00309C2D /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		CF4CE88B1CD07F9C00309C2D /* JSActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSActivityView.h; sourceTree = "<group>"; };
+		CF4CE88C1CD07F9C00309C2D /* JSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSActivityView.m; sourceTree = "<group>"; };
+		CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSActivityView.xib; sourceTree = "<group>"; };
+		CF4CE8901CD0893600309C2D /* JSDragDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDragDownView.h; sourceTree = "<group>"; };
+		CF4CE8911CD0893600309C2D /* JSDragDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDragDownView.m; sourceTree = "<group>"; };
 		CF55F63E1CCF755000AC1EEA /* 网易彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF55F64D1CCF755000AC1EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF55F6501CCF755000AC1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -268,6 +280,13 @@
 		CF55F6801CCF76DE00AC1EEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF4CE8881CD07E2E00309C2D /* CoverView.h */,
+				CF4CE8891CD07E2E00309C2D /* CoverView.m */,
+				CF4CE88B1CD07F9C00309C2D /* JSActivityView.h */,
+				CF4CE88C1CD07F9C00309C2D /* JSActivityView.m */,
+				CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */,
+				CF4CE8901CD0893600309C2D /* JSDragDownView.h */,
+				CF4CE8911CD0893600309C2D /* JSDragDownView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,6 +433,7 @@
 				CF55F6921CCF76DE00AC1EEA /* AppDelegate.h */,
 				CF55F6931CCF76DE00AC1EEA /* AppDelegate.m */,
 				CF55F6941CCF76DE00AC1EEA /* main.m */,
+				CF4CE8871CD07AB800309C2D /* 网易彩票.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -555,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */,
 				CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */,
 				CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */,
 			);
@@ -585,11 +606,14 @@
 				CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */,
 				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
+				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
 				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
 				CF55F6A61CCF79F600AC1EEA /* JSMyLotteryTableViewController.m in Sources */,
+				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
+				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
 				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
 			);
@@ -724,6 +748,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "网易彩票/classes/Other/网易彩票.pch";
 				INFOPLIST_FILE = "网易彩票/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -737,6 +763,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "网易彩票/classes/Other/网易彩票.pch";
 				INFOPLIST_FILE = "网易彩票/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

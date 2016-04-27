@@ -22,6 +22,7 @@
     
     //添加按钮
     for (UITabBarItem* item in _items) {
+        
         JSTabBarButton* btn=[JSTabBarButton buttonWithType:UIButtonTypeCustom];
         
         [btn setImage:item.image forState:UIControlStateNormal];

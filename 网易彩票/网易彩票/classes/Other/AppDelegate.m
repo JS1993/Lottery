@@ -22,6 +22,8 @@
     
     JSTabBarController* tab=[[JSTabBarController alloc]init];
     
+    
+    
     self.window.rootViewController=tab;
     
     [self.window makeKeyAndVisible];
