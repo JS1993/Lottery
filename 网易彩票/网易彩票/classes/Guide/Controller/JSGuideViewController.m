@@ -7,8 +7,15 @@
 //
 
 #import "JSGuideViewController.h"
+#import "JSGuideCollectionViewCell.h"
 
 @interface JSGuideViewController ()
+
+@property(nonatomic,strong)UIImageView* guideImageView;
+
+@property(nonatomic,strong)UIImageView* guideLargeTextImageView;
+
+@property(nonatomic,strong)UIImageView* guideSmallTextImageView;
 
 @end
 
@@ -18,7 +25,7 @@
     
     UICollectionViewFlowLayout* layout=[[UICollectionViewFlowLayout alloc]init];
     
-    layout.itemSize=KeyWindow.bounds.size;
+    layout.itemSize=[UIScreen mainScreen].bounds.size;
     
     layout.minimumLineSpacing=0;
     
@@ -34,29 +41,29 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.collectionView.showsHorizontalScrollIndicator=NO;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    self.collectionView.pagingEnabled=YES;
     
-    // Do any additional setup after loading the view.
+    self.collectionView.bounces=NO;
+    
+    [self.collectionView registerClass:[JSGuideCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    UIImage* guiLineImage=[UIImage imageNamed:@"guideLine"];
+    
+    UIImageView* guideLine=[[UIImageView alloc]initWithFrame:CGRectMake(-20, 0, guiLineImage.size.width, guiLineImage.size.height)];
+    
+    guideLine.image=guiLineImage;
+    
+    [self.collectionView addSubview:guideLine];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setUpImageView{
+    
+    
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -72,9 +79,12 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    JSGuideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    UIImage* image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%ldBackground568h",indexPath.item+1]];
+    
+    cell.image=image;
     
     return cell;
 }
