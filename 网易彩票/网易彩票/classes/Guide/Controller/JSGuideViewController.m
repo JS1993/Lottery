@@ -105,6 +105,13 @@ static NSString * const reuseIdentifier = @"Cell";
     
     int page=currentOffset/self.view.bounds.size.width+1;
     
+    self.guideImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%d",page]];
+    
+    self.guideLargeTextImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"guideLargeText%d",page]];
+    
+    self.guideSmallTextImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"guideSmallText%d",page]];
+    
+    self.lastOffset=currentOffset;
 }
 
 
