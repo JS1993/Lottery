@@ -23,9 +23,11 @@
     if (_startButton==nil) {
         _startButton=[UIButton buttonWithType:UIButtonTypeCustom];
         
-        _startButton.center=CGPointMake(self.center.x, self.bounds.size.height*0.9);
-        
         [_startButton setBackgroundImage:[UIImage imageNamed:@"guideStart"] forState:UIControlStateNormal];
+        
+        [_startButton sizeToFit];
+        
+        _startButton.center=CGPointMake(self.bounds.size.width*0.5, ScreenH*0.9);
         
         [_startButton addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
         

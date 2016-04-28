@@ -19,16 +19,16 @@
     [ud setInteger:++runTimes forKey:@"runTimes"];
     [ud synchronize];
     
-    if (runTimes==1) {
-        
+//    if (runTimes==1) {
+    
         JSGuideViewController* guide=[[JSGuideViewController alloc]init];
         
         return guide;
-    }else{
-        JSTabBarController* tab=[[JSTabBarController alloc]init];
-        
-        return tab;
-    }
+//    }else{
+//        JSTabBarController* tab=[[JSTabBarController alloc]init];
+//        
+//        return tab;
+//    }
 }
 
 @end
