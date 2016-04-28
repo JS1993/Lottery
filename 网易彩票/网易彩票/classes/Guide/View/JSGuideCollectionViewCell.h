@@ -13,4 +13,6 @@
 
 @property(nonatomic,strong)UIImage* image;
 
+-(void)setUpPage:(NSInteger)item withAllPages:(NSInteger)allPages;
+
 @end

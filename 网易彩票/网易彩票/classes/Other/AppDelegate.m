@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "JSTabBarController.h"
-#import "JSGuideViewController.h"
+#import "GuideTools.h"
 
 @interface AppDelegate ()
 
@@ -21,11 +20,7 @@
     
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    JSTabBarController* tab=[[JSTabBarController alloc]init];
-    
-    JSGuideViewController* guide=[[JSGuideViewController alloc]init];
-    
-    self.window.rootViewController=guide;
+    self.window.rootViewController=[GuideTools chooseRootViewController];
     
     [self.window makeKeyAndVisible];
     

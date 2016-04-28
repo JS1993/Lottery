@@ -9,6 +9,8 @@
 #import "JSGuideViewController.h"
 #import "JSGuideCollectionViewCell.h"
 
+#define AllPages 4
+
 @interface JSGuideViewController ()
 
 @property(nonatomic,strong)UIImageView* guideImageView;
@@ -66,6 +68,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 }
 
+#pragma mark--第一次进入界面时布局
 -(void)setUpImageView{
     
     self.guideImageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"guide1"]];
@@ -82,7 +85,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
 }
 
-
+#pragma mark--设置引导页的动画
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
     CGFloat currentOffset=scrollView.contentOffset.x;
@@ -118,14 +121,14 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-//#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//#warning Incomplete implementation, return the number of items
-    return 4;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return AllPages;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -135,6 +138,8 @@ static NSString * const reuseIdentifier = @"Cell";
     UIImage* image=[UIImage imageNamed:[NSString stringWithFormat:@"guide%ldBackground568h",indexPath.item+1]];
     
     cell.image=image;
+    
+    [cell setUpPage:indexPath.item withAllPages:AllPages];
     
     return cell;
 }
