@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BF72E1CD2529A000F7BE7 /* JSGuideViewController.m */; };
+		CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BF7311CD254A4000F7BE7 /* JSGuideCollectionViewCell.m */; };
 		CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE8891CD07E2E00309C2D /* CoverView.m */; };
 		CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE88C1CD07F9C00309C2D /* JSActivityView.m */; };
 		CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE88E1CD07FA700309C2D /* JSActivityView.xib */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF1BF72D1CD2529A000F7BE7 /* JSGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGuideViewController.h; sourceTree = "<group>"; };
+		CF1BF72E1CD2529A000F7BE7 /* JSGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGuideViewController.m; sourceTree = "<group>"; };
+		CF1BF7301CD254A4000F7BE7 /* JSGuideCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGuideCollectionViewCell.h; sourceTree = "<group>"; };
+		CF1BF7311CD254A4000F7BE7 /* JSGuideCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGuideCollectionViewCell.m; sourceTree = "<group>"; };
 		CF4CE8871CD07AB800309C2D /* 网易彩票.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "网易彩票.pch"; sourceTree = "<group>"; };
 		CF4CE8881CD07E2E00309C2D /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
 		CF4CE8891CD07E2E00309C2D /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
@@ -131,6 +137,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF1BF7291CD2527F000F7BE7 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BF72A1CD2527F000F7BE7 /* Controller */,
+				CF1BF72B1CD2527F000F7BE7 /* Model */,
+				CF1BF72C1CD2527F000F7BE7 /* View */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		CF1BF72A1CD2527F000F7BE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BF72D1CD2529A000F7BE7 /* JSGuideViewController.h */,
+				CF1BF72E1CD2529A000F7BE7 /* JSGuideViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF1BF72B1CD2527F000F7BE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF1BF72C1CD2527F000F7BE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF1BF7301CD254A4000F7BE7 /* JSGuideCollectionViewCell.h */,
+				CF1BF7311CD254A4000F7BE7 /* JSGuideCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CF55F6351CCF755000AC1EEA = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +232,7 @@
 		CF55F6741CCF76DE00AC1EEA /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF1BF7291CD2527F000F7BE7 /* Guide */,
 				CF55F6751CCF76DE00AC1EEA /* Arana */,
 				CF55F6791CCF76DE00AC1EEA /* Discover */,
 				CF55F67D1CCF76DE00AC1EEA /* Hall */,
@@ -643,6 +685,7 @@
 				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
 				CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */,
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
+				CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */,
 				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
 				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
@@ -651,6 +694,7 @@
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
+				CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */,
 				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
 				CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */,
 				CF4CE8A11CD0CFB000309C2D /* JSBuyTogetherTableViewController.m in Sources */,
