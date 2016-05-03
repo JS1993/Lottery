@@ -7,7 +7,7 @@
 //
 
 #import "JSMyLotteryViewController.h"
-
+#import "JSSettingTableViewController.h"
 @interface JSMyLotteryViewController ()
 
 @end
@@ -40,6 +40,10 @@
 }
 
 -(void)rightButtonClicked{
+    
+    JSSettingTableViewController* vc=[[JSSettingTableViewController alloc]init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {

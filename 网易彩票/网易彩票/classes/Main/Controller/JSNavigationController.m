@@ -8,7 +8,7 @@
 
 #import "JSNavigationController.h"
 
-@interface JSNavigationController ()
+@interface JSNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -26,15 +26,45 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)viewDidLoad{
+    
+    //关闭系统的滑动返回手势
+    self.interactivePopGestureRecognizer.enabled=NO;
+   
+    UIPanGestureRecognizer* pan=[[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    
+    pan.delegate=self;
+    
+    [self.view addGestureRecognizer:pan];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark--手势识别代理
+-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    
+    //如果不是跟控制器，才可以触发滑动返回事件
+    return (self.topViewController!=[self.viewControllers firstObject]);
+    
 }
 
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    if (self.viewControllers.count!=0) {
+        viewController.hidesBottomBarWhenPushed=YES;
+    }
+    
+    UIImage * image=[UIImage imageNamed:@"NavBack"];
+    
+    image=[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
+    
+    [super pushViewController:viewController animated:animated];
+    
+}
+
+-(void)back{
+    
+    [self popViewControllerAnimated:YES];
+}
 
 @end

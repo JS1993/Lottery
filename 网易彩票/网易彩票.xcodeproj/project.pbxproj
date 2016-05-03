@@ -36,6 +36,7 @@
 		CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B11CCF7ABC00AC1EEA /* JSTabBar.m */; };
 		CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */; };
 		CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */; };
+		CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,8 @@
 		CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarButton.m; sourceTree = "<group>"; };
 		CF55F6B61CCF7BAD00AC1EEA /* JSHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHistoryTableViewController.h; sourceTree = "<group>"; };
 		CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHistoryTableViewController.m; sourceTree = "<group>"; };
+		CFC516E31CD8442E0028F955 /* JSSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSettingTableViewController.h; sourceTree = "<group>"; };
+		CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +548,8 @@
 		CF55F6961CCF76DE00AC1EEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFC516E31CD8442E0028F955 /* JSSettingTableViewController.h */,
+				CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
+				CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */,
 				CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */,
 				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
 				CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */,
