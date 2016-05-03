@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSSettingItem.h"
 
 @interface JSSettingTableViewCell : UITableViewCell
+
++(instancetype)cellWithTableView:(UITableView*)tableView;
+
+@property(strong,nonatomic)JSSettingItem* item;
 
 @end

@@ -14,6 +14,8 @@
 
 @property(nonatomic,strong)NSString* title;
 
+@property(copy,nonatomic)NSString* subTitle;
+
 +(instancetype)settingItemWithImage:(UIImage*)image andTitle:(NSString*)title;
 
 @end
