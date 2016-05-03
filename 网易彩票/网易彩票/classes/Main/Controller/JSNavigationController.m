@@ -48,15 +48,18 @@
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
+    //如果不是根控制器，才需要设置
     if (self.viewControllers.count!=0) {
+        
         viewController.hidesBottomBarWhenPushed=YES;
+        
+        UIImage * image=[UIImage imageNamed:@"NavBack"];
+        
+        image=[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+        //自定义返回按钮
+        viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
     }
-    
-    UIImage * image=[UIImage imageNamed:@"NavBack"];
-    
-    image=[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
     
     [super pushViewController:viewController animated:animated];
     

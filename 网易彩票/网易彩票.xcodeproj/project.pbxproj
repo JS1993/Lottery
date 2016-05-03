@@ -37,6 +37,11 @@
 		CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B41CCF7AD300AC1EEA /* JSTabBarButton.m */; };
 		CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */; };
 		CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */; };
+		CFC516F61CD85A440028F955 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516ED1CD85A440028F955 /* DRNRealTimeBlurView.m */; };
+		CFC516F71CD85A440028F955 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516EF1CD85A440028F955 /* UIImage+BoxBlur.m */; };
+		CFC516F81CD85A440028F955 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516F21CD85A440028F955 /* MBProgressHUD+XMG.m */; };
+		CFC516F91CD85A440028F955 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC516F31CD85A440028F955 /* MBProgressHUD.bundle */; };
+		CFC516FA1CD85A440028F955 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516F51CD85A440028F955 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +121,15 @@
 		CF55F6B71CCF7BAD00AC1EEA /* JSHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHistoryTableViewController.m; sourceTree = "<group>"; };
 		CFC516E31CD8442E0028F955 /* JSSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSettingTableViewController.h; sourceTree = "<group>"; };
 		CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSettingTableViewController.m; sourceTree = "<group>"; };
+		CFC516EC1CD85A440028F955 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		CFC516ED1CD85A440028F955 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		CFC516EE1CD85A440028F955 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		CFC516EF1CD85A440028F955 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		CFC516F11CD85A440028F955 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		CFC516F21CD85A440028F955 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		CFC516F31CD85A440028F955 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		CFC516F41CD85A440028F955 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CFC516F51CD85A440028F955 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,6 +541,7 @@
 		CF55F6911CCF76DE00AC1EEA /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CFC516E81CD85A440028F955 /* Lib */,
 				CF55F6921CCF76DE00AC1EEA /* AppDelegate.h */,
 				CF55F6931CCF76DE00AC1EEA /* AppDelegate.m */,
 				CF55F6941CCF76DE00AC1EEA /* main.m */,
@@ -566,6 +581,54 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CFC516E81CD85A440028F955 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CFC516E91CD85A440028F955 /* AMSmoothAlert */,
+				CFC516EB1CD85A440028F955 /* DRNRealTimeBlurView */,
+				CFC516F01CD85A440028F955 /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CFC516E91CD85A440028F955 /* AMSmoothAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CFC516EA1CD85A440028F955 /* assets */,
+			);
+			path = AMSmoothAlert;
+			sourceTree = "<group>";
+		};
+		CFC516EA1CD85A440028F955 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CFC516EB1CD85A440028F955 /* DRNRealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				CFC516EC1CD85A440028F955 /* DRNRealTimeBlurView.h */,
+				CFC516ED1CD85A440028F955 /* DRNRealTimeBlurView.m */,
+				CFC516EE1CD85A440028F955 /* UIImage+BoxBlur.h */,
+				CFC516EF1CD85A440028F955 /* UIImage+BoxBlur.m */,
+			);
+			path = DRNRealTimeBlurView;
+			sourceTree = "<group>";
+		};
+		CFC516F01CD85A440028F955 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CFC516F11CD85A440028F955 /* MBProgressHUD+XMG.h */,
+				CFC516F21CD85A440028F955 /* MBProgressHUD+XMG.m */,
+				CFC516F31CD85A440028F955 /* MBProgressHUD.bundle */,
+				CFC516F41CD85A440028F955 /* MBProgressHUD.h */,
+				CFC516F51CD85A440028F955 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -679,6 +742,7 @@
 				CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */,
 				CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */,
 				CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */,
+				CFC516F91CD85A440028F955 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,10 +775,12 @@
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
 				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
 				CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */,
+				CFC516F71CD85A440028F955 /* UIImage+BoxBlur.m in Sources */,
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
 				CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */,
 				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
+				CFC516FA1CD85A440028F955 /* MBProgressHUD.m in Sources */,
 				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
 				CF4CE8A71CD0D5F600309C2D /* LuckyView.m in Sources */,
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
@@ -722,10 +788,12 @@
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
 				CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */,
+				CFC516F81CD85A440028F955 /* MBProgressHUD+XMG.m in Sources */,
 				CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */,
 				CF55F69D1CCF794700AC1EEA /* JSHallTableViewController.m in Sources */,
 				CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */,
 				CF4CE8A11CD0CFB000309C2D /* JSBuyTogetherTableViewController.m in Sources */,
+				CFC516F61CD85A440028F955 /* DRNRealTimeBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
