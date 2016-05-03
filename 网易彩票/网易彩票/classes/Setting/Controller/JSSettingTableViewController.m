@@ -7,44 +7,102 @@
 //
 
 #import "JSSettingTableViewController.h"
+#import "JSSettingTableViewCell.h"
+#import "JSSettingGroup.h"
+#import "JSArrowSettingItem.h"
+#import "JSSwitchSettingItem.h"
 
 @interface JSSettingTableViewController ()
+
+@property(nonatomic,strong)NSMutableArray* groups;
 
 @end
 
 @implementation JSSettingTableViewController
 
+-(NSMutableArray *)groups{
+    if (_groups==nil) {
+        _groups=[NSMutableArray array];
+    }
+    return _groups;
+}
+
+-(instancetype)init{
+    
+    return [super initWithStyle:UITableViewStyleGrouped];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title=@"设置";
+    
+    [self setUpGroup0];
+    
+    [self setUpGroup1];
+    
+    [self setUpGroup2];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-   
+-(void)setUpGroup0{
+    JSArrowSettingItem * item0=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"RedeemCode"] andTitle:@"使用兑换码"];
+    
+    JSSettingGroup* group=[JSSettingGroup settingGroupWithItems:@[item0]];
+    
+    [self.groups addObject:group];
+}
+
+-(void)setUpGroup1{
+    JSArrowSettingItem * item0=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MorePush"] andTitle:@"推送和提醒"];
+    
+    JSSwitchSettingItem * item1=[JSSwitchSettingItem settingItemWithImage:[UIImage imageNamed:@"more_homeshake"] andTitle:@"使用摇一摇机选"];
+    
+    JSSwitchSettingItem * item2=[JSSwitchSettingItem settingItemWithImage:[UIImage imageNamed:@"sound-Effect"] andTitle:@"声音效果"];
+    
+    JSSwitchSettingItem * item3=[JSSwitchSettingItem settingItemWithImage:[UIImage imageNamed:@"More_LotteryRecommend"] andTitle:@"购彩小助手"];
+    
+    JSSettingGroup* group=[JSSettingGroup settingGroupWithItems:@[item0,item1,item2,item3]];
+    
+    [self.groups addObject:group];
+}
+
+-(void)setUpGroup2{
+    
+    JSArrowSettingItem * item0=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreUpdate"] andTitle:@"检查新版本"];
+    
+    JSArrowSettingItem * item1=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreShare"] andTitle:@"分享"];
+    
+    JSArrowSettingItem * item2=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreNetease"] andTitle:@"产品推荐"];
+    
+    JSArrowSettingItem * item3=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreAbout"] andTitle:@"关于"];
+    
+    JSSettingGroup* group=[JSSettingGroup settingGroupWithItems:@[item0,item1,item2,item3]];
+    
+    [self.groups addObject:group];
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return self.groups.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return [self.groups[section] items].count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    JSSettingTableViewCell* cell=[JSSettingTableViewCell cellWithTableView:tableView];
+    
+    cell.item=[self.groups[indexPath.section] items][indexPath.row];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

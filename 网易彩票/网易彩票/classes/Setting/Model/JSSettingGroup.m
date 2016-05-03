@@ -13,7 +13,7 @@
 
 +(instancetype)settingGroupWithItems:(NSArray*)items{
     
-    JSSettingGroup* group=[[JSSettingGroup alloc]init];
+    JSSettingGroup* group=[[self alloc]init];
     
     group.items=items;
     

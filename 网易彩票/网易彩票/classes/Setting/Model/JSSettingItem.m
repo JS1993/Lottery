@@ -12,7 +12,7 @@
 
 +(instancetype)settingItemWithImage:(UIImage*)image andTitle:(NSString*)title{
     
-    JSSettingItem* item=[[JSSettingItem alloc]init];
+    JSSettingItem* item=[[self alloc]init];
     
     item.image=image;
     

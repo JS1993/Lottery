@@ -35,6 +35,7 @@
 }
 
 +(instancetype)cellWithTableView:(UITableView*)tableView{
+    
     static NSString* indentifier=@"cell";
     
     JSSettingTableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:indentifier];
@@ -65,9 +66,13 @@
 -(void)setUpAccessoryView{
     
     if ([_item isKindOfClass:[JSSwitchSettingItem class]]) {
-        self.accessoryView=self.switchView ;
+        
+        self.accessoryView=self.switchView;
+        
     }else if([_item isKindOfClass:[JSArrowSettingItem class]]){
+        
         self.accessoryView=self.arrowView;
+        
     }else{
         self.accessoryView=nil;
     }
