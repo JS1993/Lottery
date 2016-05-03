@@ -53,6 +53,39 @@
 		CFC517191CD8DBE50028F955 /* JSAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517181CD8DBE50028F955 /* JSAwardViewController.m */; };
 		CFC5171C1CD8DBEE0028F955 /* JSPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */; };
 		CFC5171F1CD8E13B0028F955 /* JSHelpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */; };
+		CFC517211CD8EDD70028F955 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC517201CD8EDD70028F955 /* help.json */; };
+		CFC517401CD8EE030028F955 /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517231CD8EE030028F955 /* bjdc_howto.html */; };
+		CFC517411CD8EE030028F955 /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517241CD8EE030028F955 /* coupon_help.html */; };
+		CFC517421CD8EE030028F955 /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517251CD8EE030028F955 /* credit_help.html */; };
+		CFC517431CD8EE030028F955 /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517261CD8EE030028F955 /* dlt_howto.html */; };
+		CFC517441CD8EE030028F955 /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517271CD8EE030028F955 /* f9_howto.html */; };
+		CFC517451CD8EE030028F955 /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517281CD8EE030028F955 /* gdy11_howto.html */; };
+		CFC517461CD8EE030028F955 /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517291CD8EE030028F955 /* group_record.html */; };
+		CFC517471CD8EE030028F955 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172A1CD8EE030028F955 /* help.html */; };
+		CFC517481CD8EE030028F955 /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172B1CD8EE030028F955 /* helpGroupBuy.html */; };
+		CFC517491CD8EE030028F955 /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172C1CD8EE030028F955 /* jclq_howto.html */; };
+		CFC5174A1CD8EE030028F955 /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172D1CD8EE030028F955 /* jczq_howto.html */; };
+		CFC5174B1CD8EE030028F955 /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172E1CD8EE030028F955 /* jxssc_howto.html */; };
+		CFC5174C1CD8EE030028F955 /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5172F1CD8EE030028F955 /* jxy11_howto.html */; };
+		CFC5174D1CD8EE030028F955 /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517301CD8EE030028F955 /* k2_howto.html */; };
+		CFC5174E1CD8EE030028F955 /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517311CD8EE030028F955 /* k3_howto.html */; };
+		CFC5174F1CD8EE030028F955 /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517321CD8EE030028F955 /* kl8_howto.html */; };
+		CFC517501CD8EE030028F955 /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517331CD8EE030028F955 /* lk11_howto.html */; };
+		CFC517511CD8EE030028F955 /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517341CD8EE030028F955 /* networkconnectedfailed.html */; };
+		CFC517521CD8EE030028F955 /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517351CD8EE030028F955 /* pl3_howto.html */; };
+		CFC517531CD8EE030028F955 /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517361CD8EE030028F955 /* pl5_howto.html */; };
+		CFC517541CD8EE030028F955 /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517371CD8EE030028F955 /* qlc_howto.html */; };
+		CFC517551CD8EE030028F955 /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC517381CD8EE030028F955 /* qxc_howto.html */; };
+		CFC517561CD8EE030028F955 /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = CFC517391CD8EE030028F955 /* rule.css */; };
+		CFC517571CD8EE030028F955 /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173A1CD8EE030028F955 /* sfc_howto.html */; };
+		CFC517581CD8EE030028F955 /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173B1CD8EE030028F955 /* ssc_howto.html */; };
+		CFC517591CD8EE030028F955 /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173C1CD8EE030028F955 /* ssq_howto.html */; };
+		CFC5175A1CD8EE030028F955 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173D1CD8EE030028F955 /* x3d_howto.html */; };
+		CFC5175B1CD8EE030028F955 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173E1CD8EE030028F955 /* y11_howto.html */; };
+		CFC5175C1CD8EE030028F955 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = CFC5173F1CD8EE030028F955 /* znzh.html */; };
+		CFC5175F1CD8EEC80028F955 /* JSHtmlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5175E1CD8EEC80028F955 /* JSHtmlModel.m */; };
+		CFC517621CD8EF030028F955 /* JSHtmlJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517611CD8EF030028F955 /* JSHtmlJsonParser.m */; };
+		CFC517651CD8F2530028F955 /* JSHelpWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517641CD8F2530028F955 /* JSHelpWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +196,42 @@
 		CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPushViewController.m; sourceTree = "<group>"; };
 		CFC5171D1CD8E13B0028F955 /* JSHelpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHelpTableViewController.h; sourceTree = "<group>"; };
 		CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHelpTableViewController.m; sourceTree = "<group>"; };
+		CFC517201CD8EDD70028F955 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = help.json; path = ../../Other/help.json; sourceTree = "<group>"; };
+		CFC517231CD8EE030028F955 /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
+		CFC517241CD8EE030028F955 /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
+		CFC517251CD8EE030028F955 /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
+		CFC517261CD8EE030028F955 /* dlt_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dlt_howto.html; sourceTree = "<group>"; };
+		CFC517271CD8EE030028F955 /* f9_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = f9_howto.html; sourceTree = "<group>"; };
+		CFC517281CD8EE030028F955 /* gdy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdy11_howto.html; sourceTree = "<group>"; };
+		CFC517291CD8EE030028F955 /* group_record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = group_record.html; sourceTree = "<group>"; };
+		CFC5172A1CD8EE030028F955 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		CFC5172B1CD8EE030028F955 /* helpGroupBuy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helpGroupBuy.html; sourceTree = "<group>"; };
+		CFC5172C1CD8EE030028F955 /* jclq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jclq_howto.html; sourceTree = "<group>"; };
+		CFC5172D1CD8EE030028F955 /* jczq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jczq_howto.html; sourceTree = "<group>"; };
+		CFC5172E1CD8EE030028F955 /* jxssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxssc_howto.html; sourceTree = "<group>"; };
+		CFC5172F1CD8EE030028F955 /* jxy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxy11_howto.html; sourceTree = "<group>"; };
+		CFC517301CD8EE030028F955 /* k2_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k2_howto.html; sourceTree = "<group>"; };
+		CFC517311CD8EE030028F955 /* k3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k3_howto.html; sourceTree = "<group>"; };
+		CFC517321CD8EE030028F955 /* kl8_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kl8_howto.html; sourceTree = "<group>"; };
+		CFC517331CD8EE030028F955 /* lk11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lk11_howto.html; sourceTree = "<group>"; };
+		CFC517341CD8EE030028F955 /* networkconnectedfailed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = networkconnectedfailed.html; sourceTree = "<group>"; };
+		CFC517351CD8EE030028F955 /* pl3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl3_howto.html; sourceTree = "<group>"; };
+		CFC517361CD8EE030028F955 /* pl5_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl5_howto.html; sourceTree = "<group>"; };
+		CFC517371CD8EE030028F955 /* qlc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qlc_howto.html; sourceTree = "<group>"; };
+		CFC517381CD8EE030028F955 /* qxc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qxc_howto.html; sourceTree = "<group>"; };
+		CFC517391CD8EE030028F955 /* rule.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = rule.css; sourceTree = "<group>"; };
+		CFC5173A1CD8EE030028F955 /* sfc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sfc_howto.html; sourceTree = "<group>"; };
+		CFC5173B1CD8EE030028F955 /* ssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssc_howto.html; sourceTree = "<group>"; };
+		CFC5173C1CD8EE030028F955 /* ssq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssq_howto.html; sourceTree = "<group>"; };
+		CFC5173D1CD8EE030028F955 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
+		CFC5173E1CD8EE030028F955 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
+		CFC5173F1CD8EE030028F955 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
+		CFC5175D1CD8EEC80028F955 /* JSHtmlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHtmlModel.h; sourceTree = "<group>"; };
+		CFC5175E1CD8EEC80028F955 /* JSHtmlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHtmlModel.m; sourceTree = "<group>"; };
+		CFC517601CD8EF030028F955 /* JSHtmlJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHtmlJsonParser.h; sourceTree = "<group>"; };
+		CFC517611CD8EF030028F955 /* JSHtmlJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHtmlJsonParser.m; sourceTree = "<group>"; };
+		CFC517631CD8F2530028F955 /* JSHelpWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHelpWebViewController.h; sourceTree = "<group>"; };
+		CFC517641CD8F2530028F955 /* JSHelpWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHelpWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +518,8 @@
 			children = (
 				CFC5171D1CD8E13B0028F955 /* JSHelpTableViewController.h */,
 				CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */,
+				CFC517631CD8F2530028F955 /* JSHelpWebViewController.h */,
+				CFC517641CD8F2530028F955 /* JSHelpWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -456,6 +527,12 @@
 		CF55F6831CCF76DE00AC1EEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC517221CD8EE030028F955 /* Html */,
+				CFC517201CD8EDD70028F955 /* help.json */,
+				CFC5175D1CD8EEC80028F955 /* JSHtmlModel.h */,
+				CFC5175E1CD8EEC80028F955 /* JSHtmlModel.m */,
+				CFC517601CD8EF030028F955 /* JSHtmlJsonParser.h */,
+				CFC517611CD8EF030028F955 /* JSHtmlJsonParser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -694,6 +771,42 @@
 			path = Push;
 			sourceTree = "<group>";
 		};
+		CFC517221CD8EE030028F955 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				CFC517231CD8EE030028F955 /* bjdc_howto.html */,
+				CFC517241CD8EE030028F955 /* coupon_help.html */,
+				CFC517251CD8EE030028F955 /* credit_help.html */,
+				CFC517261CD8EE030028F955 /* dlt_howto.html */,
+				CFC517271CD8EE030028F955 /* f9_howto.html */,
+				CFC517281CD8EE030028F955 /* gdy11_howto.html */,
+				CFC517291CD8EE030028F955 /* group_record.html */,
+				CFC5172A1CD8EE030028F955 /* help.html */,
+				CFC5172B1CD8EE030028F955 /* helpGroupBuy.html */,
+				CFC5172C1CD8EE030028F955 /* jclq_howto.html */,
+				CFC5172D1CD8EE030028F955 /* jczq_howto.html */,
+				CFC5172E1CD8EE030028F955 /* jxssc_howto.html */,
+				CFC5172F1CD8EE030028F955 /* jxy11_howto.html */,
+				CFC517301CD8EE030028F955 /* k2_howto.html */,
+				CFC517311CD8EE030028F955 /* k3_howto.html */,
+				CFC517321CD8EE030028F955 /* kl8_howto.html */,
+				CFC517331CD8EE030028F955 /* lk11_howto.html */,
+				CFC517341CD8EE030028F955 /* networkconnectedfailed.html */,
+				CFC517351CD8EE030028F955 /* pl3_howto.html */,
+				CFC517361CD8EE030028F955 /* pl5_howto.html */,
+				CFC517371CD8EE030028F955 /* qlc_howto.html */,
+				CFC517381CD8EE030028F955 /* qxc_howto.html */,
+				CFC517391CD8EE030028F955 /* rule.css */,
+				CFC5173A1CD8EE030028F955 /* sfc_howto.html */,
+				CFC5173B1CD8EE030028F955 /* ssc_howto.html */,
+				CFC5173C1CD8EE030028F955 /* ssq_howto.html */,
+				CFC5173D1CD8EE030028F955 /* x3d_howto.html */,
+				CFC5173E1CD8EE030028F955 /* y11_howto.html */,
+				CFC5173F1CD8EE030028F955 /* znzh.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -800,12 +913,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC5175A1CD8EE030028F955 /* x3d_howto.html in Resources */,
+				CFC5174C1CD8EE030028F955 /* jxy11_howto.html in Resources */,
+				CFC517541CD8EE030028F955 /* qlc_howto.html in Resources */,
+				CFC5175B1CD8EE030028F955 /* y11_howto.html in Resources */,
 				CF4CE89E1CD0C93900309C2D /* JSDiscoverTableViewController.storyboard in Resources */,
+				CFC5174D1CD8EE030028F955 /* k2_howto.html in Resources */,
+				CFC517501CD8EE030028F955 /* lk11_howto.html in Resources */,
+				CFC517521CD8EE030028F955 /* pl3_howto.html in Resources */,
+				CFC517471CD8EE030028F955 /* help.html in Resources */,
 				CF4CE8991CD0BA5900309C2D /* JSMyLotteryViewController.xib in Resources */,
+				CFC517551CD8EE030028F955 /* qxc_howto.html in Resources */,
 				CF4CE88F1CD07FA700309C2D /* JSActivityView.xib in Resources */,
+				CFC517581CD8EE030028F955 /* ssc_howto.html in Resources */,
+				CFC517461CD8EE030028F955 /* group_record.html in Resources */,
+				CFC517561CD8EE030028F955 /* rule.css in Resources */,
 				CF55F6511CCF755000AC1EEA /* LaunchScreen.storyboard in Resources */,
+				CFC5174F1CD8EE030028F955 /* kl8_howto.html in Resources */,
+				CFC517531CD8EE030028F955 /* pl5_howto.html in Resources */,
+				CFC517591CD8EE030028F955 /* ssq_howto.html in Resources */,
 				CF55F64E1CCF755000AC1EEA /* Assets.xcassets in Resources */,
+				CFC517401CD8EE030028F955 /* bjdc_howto.html in Resources */,
+				CFC517421CD8EE030028F955 /* credit_help.html in Resources */,
 				CFC516F91CD85A440028F955 /* MBProgressHUD.bundle in Resources */,
+				CFC517481CD8EE030028F955 /* helpGroupBuy.html in Resources */,
+				CFC517211CD8EDD70028F955 /* help.json in Resources */,
+				CFC5174A1CD8EE030028F955 /* jczq_howto.html in Resources */,
+				CFC517491CD8EE030028F955 /* jclq_howto.html in Resources */,
+				CFC5174B1CD8EE030028F955 /* jxssc_howto.html in Resources */,
+				CFC517411CD8EE030028F955 /* coupon_help.html in Resources */,
+				CFC5174E1CD8EE030028F955 /* k3_howto.html in Resources */,
+				CFC517431CD8EE030028F955 /* dlt_howto.html in Resources */,
+				CFC517571CD8EE030028F955 /* sfc_howto.html in Resources */,
+				CFC517451CD8EE030028F955 /* gdy11_howto.html in Resources */,
+				CFC517441CD8EE030028F955 /* f9_howto.html in Resources */,
+				CFC5175C1CD8EE030028F955 /* znzh.html in Resources */,
+				CFC517511CD8EE030028F955 /* networkconnectedfailed.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +978,7 @@
 				CFC517001CD85C5C0028F955 /* JSSettingGroup.m in Sources */,
 				CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */,
 				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
+				CFC5175F1CD8EEC80028F955 /* JSHtmlModel.m in Sources */,
 				CF1BF7371CD25FD5000F7BE7 /* GuideTools.m in Sources */,
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
 				CFC5171C1CD8DBEE0028F955 /* JSPushViewController.m in Sources */,
@@ -861,6 +1005,7 @@
 				CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
 				CFC516FD1CD85C450028F955 /* JSSettingItem.m in Sources */,
+				CFC517621CD8EF030028F955 /* JSHtmlJsonParser.m in Sources */,
 				CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */,
 				CFC516F81CD85A440028F955 /* MBProgressHUD+XMG.m in Sources */,
 				CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */,
@@ -868,6 +1013,7 @@
 				CF4CE8AA1CD0D6FD00309C2D /* JSLuckyViewController.m in Sources */,
 				CF4CE8A11CD0CFB000309C2D /* JSBuyTogetherTableViewController.m in Sources */,
 				CFC516F61CD85A440028F955 /* DRNRealTimeBlurView.m in Sources */,
+				CFC517651CD8F2530028F955 /* JSHelpWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
