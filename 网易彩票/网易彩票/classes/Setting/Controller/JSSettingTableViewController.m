@@ -16,6 +16,7 @@
 #import "JSCheckUpdateBlurView.h"
 
 #import "JSPushViewController.h"
+#import "JSHelpTableViewController.h"
 
 @interface JSSettingTableViewController ()
 
@@ -35,6 +36,18 @@
     
     [self setUpGroup2];
     
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"常见问题" style:UIBarButtonItemStyleBordered target:self action:@selector(help)];
+    self.navigationItem.rightBarButtonItem.tintColor=[UIColor whiteColor];
+    
+}
+
+-(void)help{
+   
+    JSHelpTableViewController* helpVC=[[JSHelpTableViewController alloc]init];
+    
+    helpVC.title=@"帮助";
+    
+    [self.navigationController pushViewController:helpVC animated:YES];
 }
 
 -(void)setUpGroup0{

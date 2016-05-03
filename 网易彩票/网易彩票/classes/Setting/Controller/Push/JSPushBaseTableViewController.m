@@ -77,5 +77,13 @@
     }
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+   
+    return [self.groups[section] footerTitle];
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [self.groups[section] headerTitle];
+}
 
 @end

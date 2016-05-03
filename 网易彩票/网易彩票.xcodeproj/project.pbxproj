@@ -52,6 +52,7 @@
 		CFC517161CD8DBD40028F955 /* JSScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517151CD8DBD40028F955 /* JSScoreViewController.m */; };
 		CFC517191CD8DBE50028F955 /* JSAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517181CD8DBE50028F955 /* JSAwardViewController.m */; };
 		CFC5171C1CD8DBEE0028F955 /* JSPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */; };
+		CFC5171F1CD8E13B0028F955 /* JSHelpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +161,8 @@
 		CFC517181CD8DBE50028F955 /* JSAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAwardViewController.m; sourceTree = "<group>"; };
 		CFC5171A1CD8DBEE0028F955 /* JSPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPushViewController.h; sourceTree = "<group>"; };
 		CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPushViewController.m; sourceTree = "<group>"; };
+		CFC5171D1CD8E13B0028F955 /* JSHelpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHelpTableViewController.h; sourceTree = "<group>"; };
+		CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHelpTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +447,8 @@
 		CF55F6821CCF76DE00AC1EEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFC5171D1CD8E13B0028F955 /* JSHelpTableViewController.h */,
+				CFC5171E1CD8E13B0028F955 /* JSHelpTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
 				CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */,
 				CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */,
+				CFC5171F1CD8E13B0028F955 /* JSHelpTableViewController.m in Sources */,
 				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
 				CFC517161CD8DBD40028F955 /* JSScoreViewController.m in Sources */,
 				CFC517131CD8D6E30028F955 /* JSPushBaseTableViewController.m in Sources */,

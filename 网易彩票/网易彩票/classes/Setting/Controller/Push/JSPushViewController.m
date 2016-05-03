@@ -7,6 +7,9 @@
 //
 
 #import "JSPushViewController.h"
+#import "JSScoreViewController.h"
+#import "JSAwardViewController.h"
+
 
 @interface JSPushViewController ()
 
@@ -24,6 +27,7 @@
 -(void)setUpGroup{
     
     JSArrowSettingItem * item0=[JSArrowSettingItem settingItemWithImage:nil andTitle:@"开奖推送"];
+    item0.destVC=[JSAwardViewController class];
     
     item0.itemOperation=^(){
         
@@ -32,6 +36,7 @@
     };
     
     JSArrowSettingItem * item1=[JSArrowSettingItem settingItemWithImage:nil andTitle:@"比分直播推送"];
+    item1.destVC=[JSScoreViewController class];
     
     JSArrowSettingItem * item2=[JSArrowSettingItem settingItemWithImage:nil andTitle:@"中奖动画"];
     

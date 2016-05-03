@@ -13,6 +13,7 @@
 #import "JSSettingItem.h"
 #import "JSSettingGroup.h"
 
+
 @interface JSPushBaseTableViewController : UITableViewController
 
 @property(nonatomic,strong)NSMutableArray* groups;
