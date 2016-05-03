@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JSHtmlModel.h"
 @interface JSHelpWebViewController : UIViewController
+
+@property(strong,nonatomic)JSHtmlModel* model;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "JSHelpWebViewController.h"
 
-@interface JSHelpWebViewController ()
+@interface JSHelpWebViewController ()<UIWebViewDelegate>
 
 @end
 
@@ -23,10 +23,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor=[UIColor whiteColor];
+    
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleBordered target:self action:@selector(back)];
+    
+    UIWebView* webView=(UIWebView*)self.view;
+    
+    NSURL* url=[[NSBundle mainBundle] URLForResource:_model.html withExtension:nil];
+    
+    NSURLRequest* request=[NSURLRequest requestWithURL:url];
+    
+    [webView loadRequest:request];
+    
+    webView.delegate=self;
+    
     
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+   
+   //让网页停留在需要的位置
+    NSString *javaStr = [NSString stringWithFormat:@"window.location.href = '#%@';",_model.ID];
+    
+    [webView stringByEvaluatingJavaScriptFromString:javaStr];
+    
+}
 
 -(void)back{
     [self dismissViewControllerAnimated:YES completion:nil];
