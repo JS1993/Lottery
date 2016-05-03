@@ -42,6 +42,11 @@
 		CFC516F81CD85A440028F955 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516F21CD85A440028F955 /* MBProgressHUD+XMG.m */; };
 		CFC516F91CD85A440028F955 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC516F31CD85A440028F955 /* MBProgressHUD.bundle */; };
 		CFC516FA1CD85A440028F955 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516F51CD85A440028F955 /* MBProgressHUD.m */; };
+		CFC516FD1CD85C450028F955 /* JSSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516FC1CD85C450028F955 /* JSSettingItem.m */; };
+		CFC517001CD85C5C0028F955 /* JSSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC516FF1CD85C5C0028F955 /* JSSettingGroup.m */; };
+		CFC517031CD85C740028F955 /* JSSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517021CD85C740028F955 /* JSSettingTableViewCell.m */; };
+		CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517051CD85E170028F955 /* JSArrowSettingItem.m */; };
+		CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +135,16 @@
 		CFC516F31CD85A440028F955 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		CFC516F41CD85A440028F955 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CFC516F51CD85A440028F955 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CFC516FB1CD85C450028F955 /* JSSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSettingItem.h; sourceTree = "<group>"; };
+		CFC516FC1CD85C450028F955 /* JSSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSettingItem.m; sourceTree = "<group>"; };
+		CFC516FE1CD85C5C0028F955 /* JSSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSettingGroup.h; sourceTree = "<group>"; };
+		CFC516FF1CD85C5C0028F955 /* JSSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSettingGroup.m; sourceTree = "<group>"; };
+		CFC517011CD85C740028F955 /* JSSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSettingTableViewCell.h; sourceTree = "<group>"; };
+		CFC517021CD85C740028F955 /* JSSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSettingTableViewCell.m; sourceTree = "<group>"; };
+		CFC517041CD85E170028F955 /* JSArrowSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSArrowSettingItem.h; sourceTree = "<group>"; };
+		CFC517051CD85E170028F955 /* JSArrowSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSArrowSettingItem.m; sourceTree = "<group>"; };
+		CFC517071CD85E260028F955 /* JSSwitchSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwitchSettingItem.h; sourceTree = "<group>"; };
+		CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwitchSettingItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +587,14 @@
 		CF55F6971CCF76DE00AC1EEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC516FB1CD85C450028F955 /* JSSettingItem.h */,
+				CFC516FC1CD85C450028F955 /* JSSettingItem.m */,
+				CFC516FE1CD85C5C0028F955 /* JSSettingGroup.h */,
+				CFC516FF1CD85C5C0028F955 /* JSSettingGroup.m */,
+				CFC517041CD85E170028F955 /* JSArrowSettingItem.h */,
+				CFC517051CD85E170028F955 /* JSArrowSettingItem.m */,
+				CFC517071CD85E260028F955 /* JSSwitchSettingItem.h */,
+				CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -579,6 +602,8 @@
 		CF55F6981CCF76DE00AC1EEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFC517011CD85C740028F955 /* JSSettingTableViewCell.h */,
+				CFC517021CD85C740028F955 /* JSSettingTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -769,14 +794,17 @@
 			files = (
 				CF55F6B81CCF7BAD00AC1EEA /* JSHistoryTableViewController.m in Sources */,
 				CF4CE89C1CD0C14B00309C2D /* JSArenaNavigationController.m in Sources */,
+				CFC517001CD85C5C0028F955 /* JSSettingGroup.m in Sources */,
 				CF55F6B21CCF7ABC00AC1EEA /* JSTabBar.m in Sources */,
 				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
 				CF1BF7371CD25FD5000F7BE7 /* GuideTools.m in Sources */,
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
+				CFC517031CD85C740028F955 /* JSSettingTableViewCell.m in Sources */,
 				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
 				CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */,
 				CFC516F71CD85A440028F955 /* UIImage+BoxBlur.m in Sources */,
 				CF55F6A31CCF79CE00AC1EEA /* JSDiscoverTableViewController.m in Sources */,
+				CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */,
 				CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */,
 				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
@@ -786,7 +814,9 @@
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
+				CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
+				CFC516FD1CD85C450028F955 /* JSSettingItem.m in Sources */,
 				CFC516E61CD8442E0028F955 /* JSSettingTableViewController.m in Sources */,
 				CFC516F81CD85A440028F955 /* MBProgressHUD+XMG.m in Sources */,
 				CF1BF72F1CD2529A000F7BE7 /* JSGuideViewController.m in Sources */,
