@@ -12,6 +12,9 @@
 #import "JSArrowSettingItem.h"
 #import "JSSwitchSettingItem.h"
 
+#import "MBProgressHUD+XMG.h"
+#import "JSCheckUpdateBlurView.h"
+
 @interface JSSettingTableViewController ()
 
 @property(nonatomic,strong)NSMutableArray* groups;
@@ -70,6 +73,22 @@
 -(void)setUpGroup2{
     
     JSArrowSettingItem * item0=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreUpdate"] andTitle:@"检查新版本"];
+    
+    item0.itemOperation=^(){
+        
+        JSCheckUpdateBlurView* blurView=[[JSCheckUpdateBlurView alloc]initWithFrame:ScreenBounds];
+        
+        [KeyWindow addSubview:blurView];
+        
+        [MBProgressHUD showSuccess:@"当前木有最新的版本"];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [blurView removeFromSuperview];
+            
+        });
+        
+    };
     
     JSArrowSettingItem * item1=[JSArrowSettingItem settingItemWithImage:[UIImage imageNamed:@"MoreShare"] andTitle:@"分享"];
     
@@ -138,21 +157,20 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
     
-    // Pass the selected object to the new view controller.
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    JSSettingItem* item=[self.groups[indexPath.section] items][indexPath.row];
+    
+    if (item.itemOperation) {
+        item.itemOperation();
+    }
 }
-*/
 
 /*
 #pragma mark - Navigation

@@ -47,6 +47,7 @@
 		CFC517031CD85C740028F955 /* JSSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517021CD85C740028F955 /* JSSettingTableViewCell.m */; };
 		CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517051CD85E170028F955 /* JSArrowSettingItem.m */; };
 		CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */; };
+		CFC5170C1CD873360028F955 /* JSCheckUpdateBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5170B1CD873360028F955 /* JSCheckUpdateBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,8 @@
 		CFC517051CD85E170028F955 /* JSArrowSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSArrowSettingItem.m; sourceTree = "<group>"; };
 		CFC517071CD85E260028F955 /* JSSwitchSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwitchSettingItem.h; sourceTree = "<group>"; };
 		CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwitchSettingItem.m; sourceTree = "<group>"; };
+		CFC5170A1CD873360028F955 /* JSCheckUpdateBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCheckUpdateBlurView.h; sourceTree = "<group>"; };
+		CFC5170B1CD873360028F955 /* JSCheckUpdateBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCheckUpdateBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +607,8 @@
 			children = (
 				CFC517011CD85C740028F955 /* JSSettingTableViewCell.h */,
 				CFC517021CD85C740028F955 /* JSSettingTableViewCell.m */,
+				CFC5170A1CD873360028F955 /* JSCheckUpdateBlurView.h */,
+				CFC5170B1CD873360028F955 /* JSCheckUpdateBlurView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -814,6 +819,7 @@
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,
+				CFC5170C1CD873360028F955 /* JSCheckUpdateBlurView.m in Sources */,
 				CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */,
 				CF55F6B51CCF7AD300AC1EEA /* JSTabBarButton.m in Sources */,
 				CFC516FD1CD85C450028F955 /* JSSettingItem.m in Sources */,
