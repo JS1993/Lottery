@@ -11,7 +11,7 @@
 
 @interface JSSettingTableViewCell : UITableViewCell
 
-+(instancetype)cellWithTableView:(UITableView*)tableView;
++(instancetype)cellWithTableView:(UITableView*)tableView andTableViewCellStyle:(UITableViewCellStyle)style;
 
 @property(strong,nonatomic)JSSettingItem* item;
 

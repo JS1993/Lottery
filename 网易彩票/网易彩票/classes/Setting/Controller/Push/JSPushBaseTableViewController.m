@@ -49,7 +49,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    JSSettingTableViewCell* cell=[JSSettingTableViewCell cellWithTableView:tableView];
+    JSSettingTableViewCell* cell=[JSSettingTableViewCell cellWithTableView:tableView andTableViewCellStyle:UITableViewCellStyleValue1];
     
     cell.item=[self.groups[indexPath.section] items][indexPath.row];
     

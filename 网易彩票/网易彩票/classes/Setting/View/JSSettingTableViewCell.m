@@ -34,14 +34,14 @@
     return _switchView;
 }
 
-+(instancetype)cellWithTableView:(UITableView*)tableView{
++(instancetype)cellWithTableView:(UITableView*)tableView andTableViewCellStyle:(UITableViewCellStyle)style{
     
     static NSString* indentifier=@"cell";
     
     JSSettingTableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:indentifier];
     
     if (cell==nil) {
-        cell=[[JSSettingTableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:indentifier];
+        cell=[[JSSettingTableViewCell alloc]initWithStyle:style reuseIdentifier:indentifier];
     }
     
     return cell;
