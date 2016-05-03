@@ -48,6 +48,10 @@
 		CFC517061CD85E170028F955 /* JSArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517051CD85E170028F955 /* JSArrowSettingItem.m */; };
 		CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */; };
 		CFC5170C1CD873360028F955 /* JSCheckUpdateBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5170B1CD873360028F955 /* JSCheckUpdateBlurView.m */; };
+		CFC517131CD8D6E30028F955 /* JSPushBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517121CD8D6E30028F955 /* JSPushBaseTableViewController.m */; };
+		CFC517161CD8DBD40028F955 /* JSScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517151CD8DBD40028F955 /* JSScoreViewController.m */; };
+		CFC517191CD8DBE50028F955 /* JSAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC517181CD8DBE50028F955 /* JSAwardViewController.m */; };
+		CFC5171C1CD8DBEE0028F955 /* JSPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,14 @@
 		CFC517081CD85E260028F955 /* JSSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwitchSettingItem.m; sourceTree = "<group>"; };
 		CFC5170A1CD873360028F955 /* JSCheckUpdateBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCheckUpdateBlurView.h; sourceTree = "<group>"; };
 		CFC5170B1CD873360028F955 /* JSCheckUpdateBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCheckUpdateBlurView.m; sourceTree = "<group>"; };
+		CFC517111CD8D6E30028F955 /* JSPushBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPushBaseTableViewController.h; sourceTree = "<group>"; };
+		CFC517121CD8D6E30028F955 /* JSPushBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPushBaseTableViewController.m; sourceTree = "<group>"; };
+		CFC517141CD8DBD40028F955 /* JSScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSScoreViewController.h; sourceTree = "<group>"; };
+		CFC517151CD8DBD40028F955 /* JSScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSScoreViewController.m; sourceTree = "<group>"; };
+		CFC517171CD8DBE50028F955 /* JSAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAwardViewController.h; sourceTree = "<group>"; };
+		CFC517181CD8DBE50028F955 /* JSAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAwardViewController.m; sourceTree = "<group>"; };
+		CFC5171A1CD8DBEE0028F955 /* JSPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPushViewController.h; sourceTree = "<group>"; };
+		CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPushViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -581,6 +593,7 @@
 		CF55F6961CCF76DE00AC1EEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFC5170D1CD8D6B40028F955 /* Push */,
 				CFC516E31CD8442E0028F955 /* JSSettingTableViewController.h */,
 				CFC516E41CD8442E0028F955 /* JSSettingTableViewController.m */,
 			);
@@ -659,6 +672,21 @@
 				CFC516F51CD85A440028F955 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CFC5170D1CD8D6B40028F955 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				CFC517111CD8D6E30028F955 /* JSPushBaseTableViewController.h */,
+				CFC517121CD8D6E30028F955 /* JSPushBaseTableViewController.m */,
+				CFC517141CD8DBD40028F955 /* JSScoreViewController.h */,
+				CFC517151CD8DBD40028F955 /* JSScoreViewController.m */,
+				CFC517171CD8DBE50028F955 /* JSAwardViewController.h */,
+				CFC517181CD8DBE50028F955 /* JSAwardViewController.m */,
+				CFC5171A1CD8DBEE0028F955 /* JSPushViewController.h */,
+				CFC5171B1CD8DBEE0028F955 /* JSPushViewController.m */,
+			);
+			path = Push;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -804,6 +832,7 @@
 				CF55F69A1CCF76DE00AC1EEA /* main.m in Sources */,
 				CF1BF7371CD25FD5000F7BE7 /* GuideTools.m in Sources */,
 				CF55F6A01CCF79A800AC1EEA /* JSAranaViewController.m in Sources */,
+				CFC5171C1CD8DBEE0028F955 /* JSPushViewController.m in Sources */,
 				CFC517031CD85C740028F955 /* JSSettingTableViewCell.m in Sources */,
 				CF4CE88A1CD07E2E00309C2D /* CoverView.m in Sources */,
 				CF4CE8A41CD0CFE700309C2D /* BuyTogetherTitleButton.m in Sources */,
@@ -812,10 +841,13 @@
 				CFC517091CD85E260028F955 /* JSSwitchSettingItem.m in Sources */,
 				CF1BF7321CD254A4000F7BE7 /* JSGuideCollectionViewCell.m in Sources */,
 				CF4CE8981CD0BA5900309C2D /* JSMyLotteryViewController.m in Sources */,
+				CFC517161CD8DBD40028F955 /* JSScoreViewController.m in Sources */,
+				CFC517131CD8D6E30028F955 /* JSPushBaseTableViewController.m in Sources */,
 				CF55F6AC1CCF7A8300AC1EEA /* JSTabBarController.m in Sources */,
 				CFC516FA1CD85A440028F955 /* MBProgressHUD.m in Sources */,
 				CF55F6AF1CCF7AA400AC1EEA /* JSNavigationController.m in Sources */,
 				CF4CE8A71CD0D5F600309C2D /* LuckyView.m in Sources */,
+				CFC517191CD8DBE50028F955 /* JSAwardViewController.m in Sources */,
 				CF55F6991CCF76DE00AC1EEA /* AppDelegate.m in Sources */,
 				CF4CE88D1CD07F9C00309C2D /* JSActivityView.m in Sources */,
 				CF4CE8921CD0893600309C2D /* JSDragDownView.m in Sources */,

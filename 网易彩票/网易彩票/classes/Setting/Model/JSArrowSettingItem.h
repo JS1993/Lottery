@@ -10,4 +10,6 @@
 
 @interface JSArrowSettingItem : JSSettingItem
 
+@property(nonatomic,assign)Class destVC;
+
 @end
